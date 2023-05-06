@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resume</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+	integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+	crossorigin="anonymous"
+	referrerpolicy="no-referrer"
+></script>
+
+</head>
+<body>
+	<center>
+	     <button id="generatePDF">Click Here to Download Resume</button>	
+	</center>
+<div class="resume-box" id="htmlContent">
+	
+	<div class="left-section">
+		<div class="profile">
+			<img src="./public/lavan.jpg"
+             class="profile-img">
+			<div class="blue-box"></div>
+		</div>
+		<h2 class="name"> B V LAVAN  <br> <span>SALIVAHAN</span></h2>
+		<p class="n-p">FULL STACK DEVELOPER</p>
+
+		<div class="info">
+			<p class="heading">Info</p>
+			<p class="p1">Address<span><br>Kurnool</span></p>
+			<p class="p1">Phone<span><br>+91 8520861207</span></p>
+			<p class="p1">Email<span><br>bvlavansalivahan@gmail.com</span></p>
+			<p class="p1">Website<span><br>https://lavanprofile.netlify.app</span></p>
+		</div>
+
+		<div class="info">
+			<p class="heading">Social</p>
+			<p class="p1">
+				<span class="span1">
+					<img src="data:image/png;base64,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">
+				</span>
+				Linkdin
+				<a href="https://www.linkedin.com/in/bvlavansalivahan/"><br>
+					/bvlavansalivahan
+				</a>
+			</p>
+			<p class="p1">
+				<span class="span1">
+					<img src="./public/github.jpg">
+				</span>
+				GIT HUB
+				<a href="https://github.com/bvlavansalivahan"><br>
+					/bvlavansalivahan
+				</a>
+			</p>
+		</div>
+
+	</div>
+
+	<div class="right-section">
+		<br><br>
+		<div class="right-heading">
+	        <img src="./public/education.png">
+			<p class="p2">EDUCATION</p>
+		</div>
+		<div class="clearfix"></div>
+
+		<div class="lr-box">
+			<div class="left">
+				<p class="p4">2020 - 2022</p>
+				<p class="p5">Silchar</p>
+			</div>
+			<div class="right">
+				<p class="p4">National Institute of Technology,Silchar</p>
+				<p class="p4">M.Tech</p>
+				<p class="p5">CGPA : 8.68</p>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+
+		<div class="lr-box">
+			<div class="left">
+				<p class="p4">2014 - 2018</p>
+				<p class="p5">Nandyal</p>
+			</div>
+			<div class="right">
+				<p class="p4">RGM College of Engineering and Technology</p>
+				<p class="p4">B.Tech</p>
+				<p class="p5">Percentage: 63.29</p>
+				
+			</div>
+			<div class="clearfix"></div>
+		</div>
+
+		<div class="lr-box">
+	        
+			<div class="left">
+				<p class="p4">2012 - 2014</p>
+				<p class="p5">Kurnool</p>
+			</div>
+			<div class="right">
+				<p class="p4">Narayana Junior College</p>
+				<p class="p4">Intermediate</p>
+				<p class="p5">Percentage: 90.5</p>
+				
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="lr-box">
+			<div class="left">
+				<p class="p4">2012</p>
+				<p class="p5">Gooty</p>
+			</div>
+			<div class="right">
+				<p class="p4">Captain K K Swamy Memorial High School</p>
+				<p class="p4">SSC</p>
+				<p class="p5">CGPA: 7.3</p>
+				
+			</div>
+			<div class="clearfix"></div>
+		</div>
+
+		<div class="right-heading">
+			<img src="./public/projects.png">
+			<p class="p2">Projects</p>
+		</div>
+		<div class="clearfix"></div>
+
+		<div class="lr-box">
+			<div class="left">
+				<p class="p4">Todo List</p>
+			</div>
+			<div class="right">
+				<a href="https://lavantodolist.netlify.app" class="p4">https://lavantodolist.netlify.app</a>
+				<p >Developed persistent todo application with CRUD operations to track list of tasks
+					<ul>
+						<li>Displayed list of todos with HTML list elements, styled todo list using CSS</li>
+						<li>Used Arrays, Objects and their methods during todolist CRUD Operations, Persisted
+							todolist state on page reloads using local storage methods.
+						</li>
+					</ul>
+					Technologies used: HTML, CSS, JS, React js
+				</p>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+
+		<div class="lr-box">
+			<div class="left">
+				<p class="p4">Profile Website</p>
+			</div>
+			<div class="right">
+				<a href="https://lavanprofile.netlify.app" class="p4">https://lavanprofile.netlify.app</a>
+				<p >Developed a responsive website for Portfolio of a person where other people like
+					interviewers can see list of projects, skills, testimonials, about and contact info.
+					<ul>
+						<li>Implemented UI such as home dashboard, individual team info routes by using React
+							Router library components like Route, Routes, BrowserRoutes,Link, props, lists &
+							keys.
+						</li>
+						<li>
+							Implemented 404 not found page for invalid paths by keeping 404 Route as last route
+							in the Routes component with * path.
+						</li>
+					</ul>
+					Technologies used: React JS, JS, CSS, Bootstrap, React Js,Material UI.
+				</p>
+			</div>
+			
+		</div>
+
+		<div class="clearfix"></div>
+
+		<div class="lr-box">
+			<div class="left">
+				<p class="p4">Wikipedia Website</p>
+			</div>
+			<div class="right">
+				<a href="https://lavanwikipedia.ccbp.tech/" class="p4">https://lavanwikipedia.ccbp.tech/</a>
+				<p >Developed custom wikipedia search application where users can search and view
+					curated results and can see detailed explanations in wikipedia by clicking on the
+					specific result.
+					<ul>
+						<li>
+							Displayed list of search results with HTML list elements with hyperlink as url,
+							styled list using CSS, Bootstrap and implemented responsiveness using Flex
+							properties and CSS Box model.
+						</li>
+						<li>
+							Fetched search results from server asynchronously using fetch GET HTTP API
+							call. When a user clicks on a particular result, opens the website in a new tab by
+							using the target attribute of the anchor tag in
+							HTML.
+						</li>
+					</ul>
+					Technologies used: HTML, CSS, JS, REST API Calls, Bootstrap
+				</p>
+			</div>
+			
+		</div>
+
+
+		<div class="right-heading">
+			<img src="./public/skills.png">
+			<p class="p2">Skills</p>
+		</div>
+		<div class="clearfix"></div>
+
+		<div class="s-box">
+			<p class="p4">Frontend:</p>
+			<p class="p6">HTML,CSS,Javascript,ReactJs</p>
+			<p class="p4">Backend:</p>
+			<p class="p6">NodeJs,ExpressJS</p>
+			<p class="p4">Database:</p>
+			<p class="p6">Sqlite,MangodB</p>
+
+		</div>
+		
+
+		<div class="clearfix"></div>
+		<br>
+        <script src="index.js"></script>
+
+		<script>
+			const button = document.getElementById('generatePDF');
+
+			function generatePDF() {
+				const element = document.getElementById('htmlContent');
+				var opt = 
+			{
+			  margin:       0,
+			  filename:     'Lavan_Resume'+'.pdf',
+			  image:        { type: 'jpeg', quality: 0.98 },
+			  html2canvas:  { scale: 5 },
+			  jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+			};
+
+			// New Promise-based usage:
+			html2pdf().set(opt).from(element).save();
+			}
+
+			button.addEventListener('click', generatePDF);
+		</script>
+
+	</div>
+    
+
+</body>
+</html>
