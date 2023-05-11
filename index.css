@@ -111,7 +111,7 @@ body{
     background: var(--white);
     width: 68%;
     float: left;
-    height: fit-content;
+    height: 1475px;
 }
 .right-heading img{
     background:var(--blue);
